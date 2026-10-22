@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name				GD Browser Custom Background Image
+@namespace			github.com/sz5ylv1a/userstyles/styles/GDBrowser-Custom-BG
+@homepageURL		https://github.com/sz5ylv1a/userstyles/styles/GDBrowser-Custom-BG
+@version			0.2.0
+@description		Lets you put your own custom backgrounds for GD Browser and its many instances
+@author				sz5ylv1a
+@license			MPL-2.0
+
+@preprocessor		less
+@var text selectedBG "Background" url("Replace this with your background's URL")
+==/UserStyle== */
+
+@-moz-document domain("gdbrowser.com"),
+	domain("146.59.93.5:1337") /* this IPv4 address is for WorstGDPS cuz they don't have a proper domain for some reason */ {
+
+	.levelBG {
+		background-image: @selectedBG;
+		background-color: #000;
+		background-blend-mode: normal;
+	}
+	.darkBG, .vaultBG, .purpleBG, .darkpurpleBG {
+		background-image: @selectedBG !important;	/* have to put !important here cuz some genius decided to do it for this class */
+		background-blend-mode: multiply;
+	}
+	.darkBG {
+		background-color: #323232;
+	}
+	.vaultBG {
+		background-color: #4B0062;
+	}
+	.purpleBG {
+		background-color: #6E00FD;
+	}
+	.darkpurpleBG {
+		background-color: #61187D;
+	}
+}
