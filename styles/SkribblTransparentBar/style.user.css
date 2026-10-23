@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name			Skribbl.io Transparent Bar
+@namespace		github.com/sz5ylv1a/userstyles/styles/SkribblTransparentBar
+@homepageURL	https://github.com/sz5ylv1a/userstyles/tree/main/styles/SkribblTransparentBar
+@updateURL		https://github.com/sz5ylv1a/userstyles/raw/refs/heads/main/styles/SkribblTransparentBar/style.user.css
+@version		1.0.0
+@description	Changes out skribbl's top bar to a transparent one
+@author			sz5ylv1a
+@license		MPL-2.0
+==/UserStyle== */
+
+@-moz-document domain("skribbl.io") {
+    #game-bar {
+		color: #fff !important;
+		background-color: #0000 !important;
+	}
+	#hints, #game-word, #game-round, .description {
+		color: #fff !important;
+		text-shadow: 2px 2px 0 #193968;
+	}
+	#game-logo img {
+		padding-bottom: 8px;
+	}
+	#game-clock {
+		filter: drop-shadow(2px 2px #193968)
+	}
+}
